@@ -21,12 +21,11 @@ public class HotelTest {
     void hotelExists() {
         assertNotNull(hotel);
         assertEquals("My Hotel", hotel.getName());
-        assertNotNull(hotel.getRooms());
-        assertEquals(2, hotel.getRooms().size());
     }
 
     @Test
     void roomsExists() {
+        assertNotNull(hotel.getRooms());
         assertEquals(2, hotel.getRooms().size());
     }
 
@@ -35,8 +34,8 @@ public class HotelTest {
      */
 
     private List<Room> populate() {
-        Room r1 = new Room(1, 101, 50.5);
-        Room r2 = new Room(2, 202, 40.5);
+        Room r1 = new Room(1, 1, 101, 50.5);
+        Room r2 = new Room(1, 2, 202, 40.5);
 
         List<Room> rooms = new ArrayList<>();
 

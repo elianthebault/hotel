@@ -29,7 +29,7 @@ public class BookingTest {
      */
 
     private Booking create() {
-        Room room = new Room(1, 101, 50.5);
+        Room room = new Room(1, 1, 101, 50.5);
 
         return new Booking(room, LocalDate.parse("2025-09-25"), LocalDate.parse("2025-09-27"));
     }
