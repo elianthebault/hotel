@@ -13,9 +13,11 @@ public class Hotel {
     private int id;
     private String name;
     private List<Room> rooms;
+    private Double basePrice;
 
-    public Hotel(String name, List<Room> rooms) {
+    public Hotel(String name, List<Room> rooms, Double basePrice) {
         this.name = name;
         this.rooms = rooms;
+        this.basePrice = basePrice;
     }
 }

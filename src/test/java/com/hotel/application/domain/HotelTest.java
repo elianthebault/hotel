@@ -46,6 +46,6 @@ public class HotelTest {
     }
 
     private Hotel create() {
-        return new Hotel("My Hotel", populate());
+        return new Hotel("My Hotel", populate(), 100.0);
     }
 }
