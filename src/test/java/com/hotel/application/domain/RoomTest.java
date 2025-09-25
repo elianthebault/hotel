@@ -18,6 +18,8 @@ public class RoomTest {
     void roomExists() {
         assertNotNull(room);
         assertEquals(1, room.getFloor());
+        assertEquals(101, room.getNumber());
+        assertEquals(50.5, room.getPrice());
     }
 
     /*

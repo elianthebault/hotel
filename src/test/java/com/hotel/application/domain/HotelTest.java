@@ -22,7 +22,7 @@ public class HotelTest {
         assertNotNull(hotel);
         assertEquals("My Hotel", hotel.getName());
         assertNotNull(hotel.getRooms());
-        assertEquals(0, hotel.getRooms().size());
+        assertEquals(2, hotel.getRooms().size());
     }
 
     @Test
